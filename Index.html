@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Car Dealership</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff; /* Text color */
+    }
+
+    nav {
+      background-color: #222; /* Dark background color for the navigation bar */
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #444; /* Darker background color on hover */
+      color: white;
+    }
+
+    .content {
+      box-sizing: border-box;
+      text-align: left;
+      padding: 20px;
+      height: 100vh;
+      position: relative;
+      background-image: url('car.png'); /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .content-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Adjust the overlay opacity to your preference */
+      z-index: 0; /* Move the overlay behind the text */
+    }
+
+    h1, p, ul, button {
+      z-index: 1; /* Ensure content is above the overlay */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #000000; /* Dark background color for the button */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffffff; /* Darker background color on hover */
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inventory.html">Inventory</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+
+<section class="content">
+  <div class="content-overlay"></div>
+  <h1>Welcome to Our Dynamic Car Dealership</h1>
+  <p>Discover the world of premium cars at our dealership. We bring you the latest models from top manufacturers, providing a wide range of options to suit your preferences.</p>
+  <p>Why choose us?</p>
+  <ul>
+    <li>Extensive Inventory: Explore a diverse selection of high-quality vehicles.</li>
+    <li>Expert Services: Our team of professionals is dedicated to meeting your automotive needs.</li>
+    <li>Customer Satisfaction: We prioritize your satisfaction, ensuring a smooth and enjoyable car-buying experience.</li>
+  </ul>
+  <p>Ready to find your dream car? Browse our inventory or contact us for personalized assistance. Your journey to owning a premium car starts here!</p>
+  <button>Contact Us</button>
+</section>
+
+</body>
+</html>
